@@ -3,22 +3,67 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Preethi Rajendram Soundararajan</title>
 	<script  src='home.js' type="text/Javascript"></script>
 	<script  src='interests.js' type="text/Javascript"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>
-		Welcome to Preethi's website
-	</h1>
-	<div class='header'>
-		<button onclick='updateHome()'>Home</button>
-		<button onclick='updateProfile()'>Profile</button>
-		<button onclick='updateContact()'>Contact me</button>
-		<button onclick='updateInterests()'>Other interests</button>
+	<header>
+		<div class="tagline">
+			The universe is under no obligation to make sense to you
+		</div>
+		<div class="tagline-author">
+			- Neil deGrasse Tyson
+		</div>
+		<br>
+		<h1>
+			Welcome to Preethi's website
+		</h1>
+		<br>
+		<nav>
+			<button onclick='updateHome()'>Home</button>
+			<button onclick='updateProfile()'>Profile</button>
+			<button onclick='updateInterests()'>Other interests</button>
+			<button onclick='updateContact()'>Contact</button>
+		</nav>
+	</header>
+
+<section>
+	<h2>
+		Home
+	</h2>
+	<div class="section-content">
+		 
 	</div>
-	<div id='maincontent'></div>
+</section>
+<section>
+	<h2>
+		Profile
+	</h2>
+	<div class="section-content"></div>
+</section>
+<section>
+	<h2>
+		Other interests
+	</h2>
+	<div class="section-content"></div>
+</section>
+<section>
+	<h2>
+		Contact
+	</h2>
+	<div class="section-content"></div>
+</section>
+
+
+
+
+
+	<footer>
+
+	</footer>
 	<script>
 		updateHome();
 	</script>
