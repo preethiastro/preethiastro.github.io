@@ -3,6 +3,11 @@
     box-sizing: border-box;
 
     margin: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+
 }
 body{
     margin: 0;
@@ -12,6 +17,7 @@ header{
     padding: 1rem;
     margin: 0;
     background-color: lightblue;
+    height: 20vh;
 }
 .tagline{
     text-align: center;
@@ -23,4 +29,95 @@ header{
 }
 .hide{
     display: none;
+}
+
+h1{
+    text-shadow: 2px 2px 3px teal;
+    text-align: center;
+}
+
+
+
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+
+}
+nav button, nav a{
+    border: none;
+    background-color: inherit;
+    padding:1rem;
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px black;
+    transition: font-size 1s, background-color 1s, color 1s;
+}
+nav button:hover{
+    font-size: 1.3rem;
+    background-color: rgba(0,0,0,0.2);
+}
+
+section{
+    min-height: 75vh ;
+    box-shadow: 5px 5px 5px black,-2px -2px grey;
+    margin:2vh 3vw;
+    padding: 3vh 3vw;
+    font-size: 1.25rem;
+    font-stretch: wider;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.section-content{
+    padding: 2vh 2vw;
+}
+
+section h2{
+    text-align: center;
+
+}
+
+#profile .section-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3em;
+    text-align: left;
+}
+
+#otherinterests .section-content{
+    display: flex;
+    flex-direction: row;
+    gap:3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.otherinterest-item{
+    text-decoration: none;
+    width: clamp(100px, 30vw, 200px);
+    background-color: lightyellow;
+    color: #333;
+    min-height: 10rem;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
