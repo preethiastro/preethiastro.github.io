@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>PRS</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Preethi Rajendram Soundararajan</title>
+	<script  src='home.js' type="text/Javascript"></script>
+	<script  src='interests.js' type="text/Javascript"></script>
 </head>
 <body>
-<h1>
-	Preethi's first website
-</h1>
+	<h1>
+		Welcome to Preethi's website
+	</h1>
+	<div class='header'>
+		<button onclick='updateHome()'>Home</button>
+		<button onclick='updateProfile()'>Profile</button>
+		<button onclick='updateContact()'>Contact me</button>
+		<button onclick='updateInterests()'>Other interests</button>
+	</div>
+	<div id='maincontent'></div>
+	<script>
+		updateHome();
+	</script>
 </body>
 </html>
