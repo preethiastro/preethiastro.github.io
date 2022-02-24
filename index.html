@@ -20,14 +20,14 @@
 			- Neil deGrasse Tyson
 		</div>
 		<nav>
-			<a onclick='updateHome()' href = "#home">Home</a>
-			<a onclick='updateProfile()' href = "#profile">Profile</a>
-			<a onclick='updateInterests()' href = "#otherinterests">Other interests</a>
-			<a onclick='updateContact()' href = "#contact">Contact</a>
+			<a onclick='unhide("home")' href = "#home">Home</a>
+			<a onclick='unhide("profile")' href = "#profile">Profile</a>
+			<a onclick='unhide("otherinterests")' href = "#otherinterests">Other interests</a>
+			<a onclick='unhide("contact")' href = "#contact">Contact</a>
 		</nav>
 	</header>
 
-<section id = "home">
+<section id = "home" class="section">
 	<h2>
 		Home
 	</h2>
@@ -38,7 +38,7 @@
 		
 	</div>
 </section>
-<section id="profile">
+<section id="profile" class="section">
 	<h2>
 		Profile
 	</h2>
@@ -92,7 +92,7 @@
 
 	</div>
 </section>
-<section id="otherinterests">
+<section id="otherinterests" class="section hide">
 	<h2>
 		Other interests
 	</h2>
@@ -106,7 +106,7 @@
 
 	</div>
 </section>
-<section id="contact">
+<section id="contact" class="section hide">
 	<h2>
 		Contact
 	</h2>
@@ -128,7 +128,14 @@
 
 	</footer>
 	<script>
-		updateHome();
+		function unhide(elemId){
+			let sections = document.querySelectorAll("section")
+			sections.forEach(section => {
+				section.classList.add("hide")
+
+			})
+			document.getElementById(elemId).classList.remove("hide")
+		}
 	</script>
 </body>
 </html>
