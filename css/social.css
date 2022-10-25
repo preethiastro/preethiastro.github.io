@@ -1,0 +1,36 @@
+#social{
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 6rem));
+ align-items: center;
+ justify-content: center;
+ gap:0.75rem;
+ flex-wrap:wrap;
+ opacity: 1;
+}
+
+#social>a{
+  background-color: white; 
+  border-radius: 50%;
+  height:4rem;
+  width:4rem;
+  opacity: 0.8;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#social>a:hover{
+  opacity: 1;
+}
+
+.social-images{
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  border-radius: 50%;
+  padding: 0px 0px;
+  background-color: none;
+  border:none;
+}
